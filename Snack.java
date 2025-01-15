@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class Snack {
 
     // instance variables about snacks
