@@ -20,5 +20,7 @@ public class Snack {
     public static void main(String[] args) {
         Snack oatmeal = new Snack("oatmeal", 0, new String[]{"brown sugar", "bananas", "cinnamon"}, 0.02f);
         System.out.println(oatmeal);
+        Snack potatoChips = new Snack("potato chips", 2, new String[]{"onion dip"}, 7.0f);
+        System.out.println(potatoChips);
     }
 }
