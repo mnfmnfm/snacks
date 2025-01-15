@@ -18,7 +18,12 @@ public class Snack {
         return "Snack: " + name + " with " + String.join(", ", toppings) + "; " + quantity + " at $" + price;
     }
     public static void main(String[] args) {
-        Snack oatmeal = new Snack("oatmeal", 0, new String[]{"brown sugar", "bananas", "cinnamon"}, 0.02f);
-        System.out.println(oatmeal);
+        Snack[] snacks = new Snack[]{
+            new Snack("oatmeal", 0, new String[]{"brown sugar", "bananas", "cinnamon"}, 0.02f),
+            new Snack("mashed potatoes", 1, new String[]{"gravy"}, 3.0f)
+        };
+        for (Snack s : snacks) {
+            System.out.println(s);
+        }
     }
 }
